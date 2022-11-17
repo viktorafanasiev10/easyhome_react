@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+  Route,
+  Routes
+} from 'react-router-dom';
+import { HomeLayout } from './layouts/HomeLayout';
+import { ProtectedLayout } from './layouts/ProtectedLayout';
+import Dashboard from './stories/pages/dashboard/Dashboard';
+import { SignInSide } from './stories/pages/signIn/SignIn';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route element={<HomeLayout />}>
+        {/*<Route path="/" element={<HomePage />} />*/}
+        <Route path="/login" element={<SignInSide />} />
+      </Route>
+
+      <Route path="/" element={<ProtectedLayout />}>
+        <Route path="dashboard" element={<Dashboard />} />
+        {/*<Route path="settings" element={<SettingsPage />} />*/}
+      </Route>
+    </Routes>
+    // <div className="App">
+    //   <SignInSide />
+    // </div>
   );
 }
 
