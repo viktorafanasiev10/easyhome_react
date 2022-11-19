@@ -1,4 +1,4 @@
-import { setContext } from '@apollo/client/link/context/index.js';
+import { setContext } from '@apollo/client/link/context/index';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

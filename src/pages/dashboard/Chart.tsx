@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   Tooltip
 } from 'recharts';
-import Title from './Title.js';
+import Title from './Title';
 
 // Generate Sales Data
 function createData(time: string, amount?: number) {
