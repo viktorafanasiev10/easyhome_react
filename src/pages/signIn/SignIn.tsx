@@ -16,7 +16,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useAuth } from '../../../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth.js';
 
 
 
@@ -119,12 +119,12 @@ export const SignInSide: React.VFC = () => {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
+                  <Link href="src/pages/signIn/SignIn.js#" variant="body2">
                     Forgot password?
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="#" variant="body2">
+                  <Link href="src/pages/signIn/SignIn.js#" variant="body2">
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>

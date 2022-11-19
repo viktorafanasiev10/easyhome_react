@@ -13,12 +13,12 @@ export const HomeLayout = () => {
 
   return (
     <div>
-      <AppBar
-        pages={[
-          { label: "Home", path: "/" },
-          { label: "Login", path: "/login" }
-        ]}
-      />
+      {/*<AppBar*/}
+      {/*  pages={[*/}
+      {/*    { label: "Home", path: "/" },*/}
+      {/*    { label: "Login", path: "/login" }*/}
+      {/*  ]}*/}
+      {/*/>*/}
       {outlet}
     </div>
   );

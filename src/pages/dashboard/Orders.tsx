@@ -5,7 +5,7 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Title from './Title';
+import Title from './Title.js';
 
 // Generate Order Data
 function createData(
@@ -62,7 +62,7 @@ function preventDefault(event: React.MouseEvent) {
 export default function Orders() {
   return (
     <React.Fragment>
-      <Title>Recent Orders</Title>
+      <Title>Recent Transactions</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -85,7 +85,7 @@ export default function Orders() {
           ))}
         </TableBody>
       </Table>
-      <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>
+      <Link color="primary" href="src/pages/dashboard/Orders.js#" onClick={preventDefault} sx={{ mt: 3 }}>
         See more orders
       </Link>
     </React.Fragment>

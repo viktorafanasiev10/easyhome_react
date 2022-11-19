@@ -6,8 +6,9 @@ import {
 } from 'react-router-dom';
 import { HomeLayout } from './layouts/HomeLayout';
 import { ProtectedLayout } from './layouts/ProtectedLayout';
-import Dashboard from './stories/pages/dashboard/Dashboard';
-import { SignInSide } from './stories/pages/signIn/SignIn';
+import Dashboard from './pages/dashboard/Dashboard';
+import SettingsPage from './pages/settings/Index';
+import { SignInSide } from './pages/signIn/SignIn';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
 
       <Route path="/" element={<ProtectedLayout />}>
         <Route path="dashboard" element={<Dashboard />} />
-        {/*<Route path="settings" element={<SettingsPage />} />*/}
+        <Route path="settings" element={<SettingsPage />} />
       </Route>
     </Routes>
     // <div className="App">

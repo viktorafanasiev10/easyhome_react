@@ -22,7 +22,7 @@ const authLink = setContext((_, { headers }) => {
   const user = localStorage.getItem('user') || '';
   // return the headers to the context so httpLink can read them
   const parsedUser = JSON.parse(user)
-  if(!parsedUser) return null
+  if(!parsedUser) return;
   return {
     headers: {
       ...headers,
